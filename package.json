@@ -1,0 +1,14 @@
+{
+  "name": "regnskabs-service",
+  "version": "1.0.0",
+  "description": "Simple facade for the public danish accconting service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anders Hørsted",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
+}
