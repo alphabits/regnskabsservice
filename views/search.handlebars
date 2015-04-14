@@ -1,0 +1,15 @@
+<form action="/search" method="get">
+
+    <input type="text" name="q" value="{{q}}" />
+    <input type="submit" name="submit" value="Søg" />
+
+</form>
+
+<h1>Søgeresultat for {{cvrnr}}</h1>
+{{#if success}}
+{{#each hits.hits}}
+    <p>CVR: {{cvr}} - Periode: {{startDate}} - {{endDate}} - Regnskab: <a href="{{link}}">download</a></p>
+{{/each}}
+{{else}}
+    <p>Ingen resultater</p>
+{{/if}}
